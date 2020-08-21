@@ -1,0 +1,13 @@
+# We will pass url, login password and whatever else we need to connect to the db.
+# Creating the docker: docker run --name postgres-spring -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres:alpine
+app:
+  datasource:
+    # We must create the Db on postgres through bach. The command is very simple though.
+    # CREATE DATABASE hotelcalifornia
+      jdbc-url: jdbc:postgresql://localhost:5432/hotelcalifornia
+      username: postgres
+      password: password
+    # Basicaly this si a number of connections that we can have instead of creating a new connection when we want to execute a query.
+      poll-size: 30
+
+# You can include the extension to the database for testing uuids: demodb=# CREATE EXTENSION "uuid-ossp"; Create the uuid with:  uuid_generate_v4();
