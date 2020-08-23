@@ -19,7 +19,7 @@ docker run --name postgres-spring -e POSTGRES_PASSWORD=password -d -p 5432:5432 
 # Type docker ps to get the docs id
 docker ps
 # And finally. Enter the dock
-docker exec -it fae0d9ce7809 bin/bash
+docker exec -it "The image id" bin/bash
 ```
 
 ## Seting up the Database inside Postgres
