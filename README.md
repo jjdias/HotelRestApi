@@ -3,12 +3,12 @@ Simple rest api using Spring boot, postgres, docker, flyway.
 
 Missing features:
   Some unit tests.
-  Exeption and error catches.
+  Exception and error catches.
   Front end.
   I messed up the names of almost everything.
 
 ## Docker
-Install docker and run the following comend on terminal.
+Install docker and run the following command on terminal.
 ``` PowerShell
 # pull fo postgres image
 docker pull postgres:11-alpine
@@ -39,4 +39,4 @@ CREATE DATABASE hotelCalifornia;
 ```
 
 ## Running in inteliJ
-Clone the repository and the table setup should be done by Flyway ther first time you run it.
+Clone the repository and the table setup should be done by Flyway thee first time you run it.
